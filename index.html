@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletín Estudiante</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="media/education.png">
+</head>
+<body>
+    <h1>Boletín Estudiantes</h1>
+    
+    <div class="section" id="materias">
+        <input type="number" id="inputNotas">
+        <button id="btnAddNotas" onclick="subirNota()">Subir Nota</button>
+    </div>
+    
+    
+    <div class="section">
+        <button id="btnListaNotas" onclick="mostrarNotas()">Mostrar Notas</button>
+        <ul id="listaNotas"></ul>
+    </div>
+    
+    <div class="section">
+    <h2 id="promedio">0</h2>
+    <button id="btnPromedio" onclick="mostrarPromedio()">Promedio</button>
+    </div>
+
+    <div class="section">
+    <h2 id="notaAlta">0</h2>
+    <button id="btnNotaAlta" onclick="mostrarNotaAlta()">Nota más Alta</button>
+    </div>
+
+    <div class="section">
+    <h2 id="aplazos">N/A</h2>
+    <button id="btnAplazos" onclick="mostrarAplazos()">Aplazos</button>
+    </div>
+
+    <footer>
+        <p>Desarrollado por <strong>Santiago Gómez</strong> 2023 &copy; | Curso de Javascript <strong>CYMETRIA</strong></p>
+    </footer>
+</body>
+</html>
